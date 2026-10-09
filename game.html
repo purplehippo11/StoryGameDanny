@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="script.js" defer></script>
 
     <style>
-      body {
-        background-color: black;
-        color: white;
-        font-family: courier new;
+      h1 {
+        color: chartreuse;
+        text-align: center;
       }
 
-      h1 {
-        text-align: center;
+      body {
+        color: whitesmoke;
+        background-color: black;
+        font-family: courier new;
       }
 
       .center-image {
@@ -40,48 +40,54 @@
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-          <li><a href="game.html">Play the game</a></li>
-        </ul>
-        <ul>
-          <li><a href="about.html">About the creator</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <a href="index.html"><span style="color: magenta">Home</span></a>
+      <a href="about.html"><span style="color: brown">About Me</span></a>
+    </nav>
 
-    <main>
-      <header>
-        <h1 id="scene-title"></h1>
-        <h2 id="character-name"></h2>
-      </header>
+    <p>
+      PHEW! You escaped the feeding frenzy! Now the real challenge begins.
+      Welcome to Danny's mansion >:)! Something feels off here... The portraits,
+      the chandelier, the DOORS! It's as if they are being distorted by time
+      itself. AHA! Time passes MUCH quicker here. You can feel your thoughts
+      racing against each other. There is absolutely no time to waste!! Locating
+      <span style="color: saddlebrown; font-family: cursive"
+        >cookie butter</span
+      >
+      is the priority. You are somehow able to make out the faintest
+      <emp>meows</emp>—not sure where they are coming from... Time is of the
+      essence! You quickly decide on two choices:
+      <span style="color: limegreen">the upstairs bedroom</span> or
+      <span style="color: mediumvioletred">the basement</span>.
+    </p>
 
-      <section>
-        <p id="scene-text"></p>
-      </section>
+    <img
+      src="insidemansion.png"
+      width="610"
+      height="500"
+      alt="mansionImage"
+      class="center-image"
+    />
+    <nav class="navbar">
+      <a href=""
+        ><span style="color: limegreen">--> upstairs bedroom</span></a
+      >
+      <a href=""
+        ><span style="color: mediumvioletred">--> the basement</span></a
+      >
+    </nav>
 
-      <section>
-        <div id="choices-container"></div>
-      </section>
+    <p>Current <span style="color: red">HP</span>: 100</p>
 
-      <section>
-        <p>Current HP:</p>
-        <ul>
-          <li id="health-display">100</li>
-        </ul>
+    <p>Current time: 8:24 PM</p>
 
-        <p>Inventory:</p>
-        <ul>
-          <li id="inventory-display"></li>
-        </ul>
-
-        <p id="message-display"></p>
-      </section>
-    </main>
-    <footer></footer>
+    <p>Inventory:</p>
+    <ul>
+      <li>a flashlight</li>
+      <li>8 cat kibble nuggets</li>
+      <li>a bandaid</li>
+      <li>a fingernail clipper</li>
+      <li>an empty glass bottle</li>
+    </ul>
   </body>
 </html>
