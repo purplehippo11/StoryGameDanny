@@ -10,13 +10,13 @@
 // --------------------------------------------------
 
 // First, we create a variable for the current scene being displayed
-let currentScene = "backyard";
+let currentScene = "entrance";
 
 // Then, we create an object that stores the data for each scene,
 const scenes = {
   // See "backyard" for the first example
-  backyard: {
-    title: "Location: Backyard",
+  entrance: {
+    title: "Location: entrance",
     character: "Interviewee:Grandma",
     text: "Text: well what I remember happening is that Darcie went inside to play with her pretend kitchen, I heard her neighbor mention he was really hungry, and the dog ran around really quickly",
     // you can choose how many choices to include
@@ -177,6 +177,7 @@ function updateHealth(amount) {
 }
 
 // This refreshes the health display
+
 updateHealth(0);
 
 // --------------------------------------------------
