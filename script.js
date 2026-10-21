@@ -19,7 +19,7 @@ const scenes = {
   // See "backyard" for the first example
   outside_pumpkin_patch: {
     title: "Location: Outside the Pumpkin Patch",
-    character: "You",
+    character: "Character: You",
     text: "The air smells of musk. Your sensory organs have been hijacked by the elixir of nostalgia. A grande sized pumpkin spice latte gets implanted into your head. Yeah... it is definitely fall. You brought cookie butter to Dr. Danny's animal hospital for her 9:00 PM checkup. The receptionist took her inside early. Now the desk is empty. A note reads: AT NINE, YOUR CAT BECOMES A DOUBLE CHOCOLATE CHUNK COOKIE. You've got to be kitten me. The hospital is inside Danny's haunted mansion, right beside this pumpkin patch. Your watch says 8:14 PM. SCREEEECH!!! Vampire bats burst out of the fog. The mansion door is open!",
     // you can choose how many choices to include
     // each choice can have text, an action, and/or nextScene

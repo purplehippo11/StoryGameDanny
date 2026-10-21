@@ -1,60 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js" defer></script>
-
-</head>
-<body>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: courier new;
+      }
+    </style>
+  <body>
     <header>
-      <nav>
-            <ul> 
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul> 
-                <li><a href="about.html">About the creator</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+      <a href="index.html"><span style="color: magenta">Home</span></a>
+      <a href="game.html"><span style="color: brown">Play the game</span></a>
+    </nav>
     </header>
 
     <main>
-    <header>
-        <h1 id="scene-title">  </h1>
-        <h2 id="character-name">  </h2>
-    </header>
-    
-    <section>
-    <p id="scene-text">     </p>
+      <header>
+        <h1 id="scene-title"></h1>
+        <h2 id="character-name"></h2>
+      </header>
 
-    </section>
+      <section>
+        <p id="scene-text"></p>
+      </section>
 
-    <section>
-        <div id="choices-container"> </div>
-    </section>   
-        
-    <section>
-        <p> Current HP:</p>
+      <section>
+        <div id="choices-container"></div>
+      </section>
+
+      <section>
+        <p>Current <strong><span style="color: red">HP</span>:</strong></p>
         <ul>
-            <li id="health-display"> 100</li>
+          <li id="health-display">100</li>
         </ul>
 
-        <p> Inventory:</p>
+        <p>Inventory:</p>
         <ul>
-            <li id="inventory-display"> </li>
+          <li id="inventory-display"></li>
         </ul>
 
         <p id="message-display"></p>
-    </section>
-
-
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
