@@ -319,7 +319,7 @@ const scenes = {
             return;
           }
           if (!inventory.includes("empty glass bottle")) {
-            messageDisplay.textContent += " You already used your bottle.";
+            timeDisplay.textContent += " You already used your bottle.";
             return false;
           }
           inventory.splice(inventory.indexOf("empty glass bottle"), 1);
@@ -408,7 +408,7 @@ const scenes = {
         text: "Use the kitchen knife (-10 HP unless you have kibble)",
         action: function () {
           if (!inventory.includes("serrated kitchen knife")) {
-            messageDisplay.textContent += " You need a knife. Try the basement cabinets.";
+            timeDisplay.textContent += " You need a knife. Try the basement cabinets.";
             return false;
           }
           if (inventory.includes("cat kibble")) {
@@ -602,7 +602,7 @@ let inventory = ["a flashlight", "a bandaid", "a fingernail clipper", "empty gla
 
 // Display current inventory
 const inventoryDisplay = document.querySelector("#inventory-display");
-const messageDisplay = document.getElementById("message-display");
+const timeDisplay = document.getElementById("time-display");
 inventoryDisplay.textContent = inventory.join(", ");
 
 // Create a function to update inventory 
@@ -624,7 +624,7 @@ function pickUpItem(itemName) {
 // Create a function that checks if the inventory contains one item and if so shows the win condition scene.
 function unlockDoor() {
   if (!inventory.includes("skeleton key")) {
-    messageDisplay.textContent += " The door is locked. You need the skeleton key.";
+    timeDisplay.textContent += " The door is locked. You need the skeleton key.";
     return false;
   }
   updateHealth(-5);
@@ -637,7 +637,7 @@ function updateTime(amount) {
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
-  messageDisplay.textContent = "Time: " + hours + ":" + minutes + " PM";
+  timeDisplay.textContent = "" + hours + ":" + minutes + " PM";
   if (amount > 0 && time >= 540) {
     time = 540;
     clearInterval(snakeOilTimer);

@@ -31,6 +31,30 @@
         text-align: center;
       }
 
+      #inventory-display {
+        padding: 0;
+        text-decoration: underline;
+      }
+      
+      #health-display {
+        padding: 0;
+        text-decoration: underline;
+      }
+
+      #time-display {
+        padding: 0;
+        text-decoration: underline;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        border-top: 1px solid #333333;
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #b3b3b3;
+      }
+
     </style>
   <body>
     <header>
@@ -55,19 +79,26 @@
       </section>
 
       <section>
-        <p>Current <strong><span style="color: red">HP</span>:</strong></p>
+
+        <p><strong>Current <span style="color: red">HP</span>:</strong></p>
         <ul>
           <li id="health-display">100</li>
         </ul>
 
-        <p>Inventory:</p>
-        <ul>
-          <li id="inventory-display"></li>
-        </ul>
+        <p><strong>Inventory:</strong></p>
+        <ul id="inventory-display"> </ul>
 
-        <p id="message-display"></p>
+        <p><strong>Time:</strong></p>
+        <p id="time-display"> </p>
+
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class = "footer-bottom">
+      © 2026 Danny Studios. All rights reserved.
+      </div>
+    </footer>
+
   </body>
 </html>
