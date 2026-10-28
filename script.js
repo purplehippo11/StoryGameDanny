@@ -30,7 +30,7 @@ const scenes = {
           updateHealth(-10);
         },
         minutes: 10,
-        nextScene: "entrance_house"
+        nextScene: "entrance_house",
       },
       {
         text: "Hide in the pumpkin patch (-25 HP)",
@@ -38,9 +38,9 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 4,
-        nextScene: "deep_pumpkin_patch"
-      }
-    ]
+        nextScene: "deep_pumpkin_patch",
+      },
+    ],
   },
 
   deep_pumpkin_patch: {
@@ -53,7 +53,7 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 3,
-        nextScene: "deep_pumpkin_patch"
+        nextScene: "deep_pumpkin_patch",
       },
       {
         text: "Search pumpkin 2",
@@ -61,7 +61,7 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 3,
-        nextScene: "deep_pumpkin_patch"
+        nextScene: "deep_pumpkin_patch",
       },
       {
         text: "Search pumpkin 3",
@@ -69,12 +69,12 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 3,
-        nextScene: "deep_pumpkin_patch"
+        nextScene: "deep_pumpkin_patch",
       },
       {
         text: "Search pumpkin 4",
         minutes: 1,
-        nextScene: "pumpkin"
+        nextScene: "pumpkin",
       },
       {
         text: "Search pumpkin 5",
@@ -82,7 +82,7 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 3,
-        nextScene: "deep_pumpkin_patch"
+        nextScene: "deep_pumpkin_patch",
       },
       {
         text: "Search pumpkin 6",
@@ -90,14 +90,14 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 3,
-        nextScene: "deep_pumpkin_patch"
+        nextScene: "deep_pumpkin_patch",
       },
       {
         text: "Go into the mansion",
         minutes: 2,
-        nextScene: "entrance_house"
-      }
-    ]
+        nextScene: "entrance_house",
+      },
+    ],
   },
 
   entrance_house: {
@@ -107,12 +107,12 @@ const scenes = {
       {
         text: "Go upstairs",
         minutes: 5,
-        nextScene: "upstairsBedroom"
+        nextScene: "upstairsBedroom",
       },
       {
         text: "Explore the basement",
         minutes: 3,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Go outside to the pumpkin patch (-15 HP)",
@@ -120,9 +120,9 @@ const scenes = {
           updateHealth(-15);
         },
         minutes: 2,
-        nextScene: "deep_pumpkin_patch"
-      }
-    ]
+        nextScene: "deep_pumpkin_patch",
+      },
+    ],
   },
 
   upstairsBedroom: {
@@ -132,19 +132,19 @@ const scenes = {
       {
         text: "Check under the bed",
         minutes: 2,
-        nextScene: "skeletonUnderBed"
+        nextScene: "skeletonUnderBed",
       },
       {
         text: "Check inside the closet",
         minutes: 2,
-        nextScene: "insideCloset"
+        nextScene: "insideCloset",
       },
       {
         text: "Go to the basement",
         minutes: 3,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   skeletonUnderBed: {
@@ -158,20 +158,20 @@ const scenes = {
           updateHealth(-15);
         },
         minutes: 1,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Pretend to die with the skeleton (YOU WILL DIE)",
         action: function () {
           updateHealth(-100);
-        }
+        },
       },
       {
         text: "Leave the key and go to the basement",
         minutes: 1,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   insideCloset: {
@@ -185,7 +185,7 @@ const scenes = {
           updateHealth(-10);
         },
         minutes: 1,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Drink the snake oil (POISON)",
@@ -195,14 +195,14 @@ const scenes = {
           }, 1000);
         },
         minutes: 1,
-        nextScene: "snakeOil"
+        nextScene: "snakeOil",
       },
       {
         text: "Leave everything and go to the basement",
         minutes: 1,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   basement: {
@@ -212,12 +212,12 @@ const scenes = {
       {
         text: "Leave the basement",
         minutes: 2,
-        nextScene: "entrance_house"
+        nextScene: "entrance_house",
       },
       {
         text: "Try the locked stairwell",
         minutes: 1,
-        nextScene: "stairwell"
+        nextScene: "stairwell",
       },
       {
         text: "Risk the broken stairs (-30 HP)",
@@ -225,19 +225,19 @@ const scenes = {
           updateHealth(-30);
         },
         minutes: 1,
-        nextScene: "dungeon"
+        nextScene: "dungeon",
       },
       {
         text: "Search the chimney",
         minutes: 1,
-        nextScene: "chimney"
+        nextScene: "chimney",
       },
       {
         text: "Search the cabinets",
         minutes: 1,
-        nextScene: "cabinets"
-      }
-    ]
+        nextScene: "cabinets",
+      },
+    ],
   },
 
   stairwell: {
@@ -248,14 +248,14 @@ const scenes = {
         text: "Use the skeleton key and take the stone stairs (-5 HP)",
         action: unlockDoor,
         minutes: 2,
-        nextScene: "dungeon"
+        nextScene: "dungeon",
       },
       {
         text: "Return to the basement",
         minutes: 1,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   cabinets: {
@@ -269,7 +269,7 @@ const scenes = {
           updateHealth(-5);
         },
         minutes: 2,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Grab the knife quickly (-20 HP)",
@@ -278,14 +278,14 @@ const scenes = {
           updateHealth(-20);
         },
         minutes: 1,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Leave the knife",
         minutes: 1,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   chimney: {
@@ -298,14 +298,14 @@ const scenes = {
           updateHealth(-25);
         },
         minutes: 2,
-        nextScene: "basement"
+        nextScene: "basement",
       },
       {
         text: "Back away",
         minutes: 1,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   dungeon: {
@@ -328,7 +328,7 @@ const scenes = {
           updateHealth(-10);
         },
         minutes: 2,
-        nextScene: "woodenCrate"
+        nextScene: "woodenCrate",
       },
       {
         text: "Cross without the bottle (-35 HP if the blade is moving)",
@@ -338,14 +338,14 @@ const scenes = {
           }
         },
         minutes: 1,
-        nextScene: "woodenCrate"
+        nextScene: "woodenCrate",
       },
       {
         text: "Leave the dungeon",
         minutes: 2,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   woodenCrate: {
@@ -358,14 +358,14 @@ const scenes = {
           updateHealth(-10);
         },
         minutes: 1,
-        nextScene: "note"
+        nextScene: "note",
       },
       {
         text: "Leave the dungeon",
         minutes: 2,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   note: {
@@ -378,14 +378,14 @@ const scenes = {
           pickUpItem("sticky note");
         },
         minutes: 2,
-        nextScene: "clue"
+        nextScene: "clue",
       },
       {
         text: "Leave without reading it",
         minutes: 2,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   clue: {
@@ -395,9 +395,9 @@ const scenes = {
       {
         text: "Return to the basement",
         minutes: 2,
-        nextScene: "basement"
-      }
-    ]
+        nextScene: "basement",
+      },
+    ],
   },
 
   pumpkin: {
@@ -408,7 +408,8 @@ const scenes = {
         text: "Use the kitchen knife (-10 HP unless you have kibble)",
         action: function () {
           if (!inventory.includes("serrated kitchen knife")) {
-            timeDisplay.textContent += " You need a knife. Try the basement cabinets.";
+            timeDisplay.textContent +=
+              " You need a knife. Try the basement cabinets.";
             return false;
           }
           if (inventory.includes("cat kibble")) {
@@ -419,25 +420,25 @@ const scenes = {
           }
         },
         minutes: 3,
-        nextScene: "solution"
+        nextScene: "solution",
       },
       {
         text: "Try cutting the vines with the fingernail clipper",
         minutes: 46,
-        nextScene: "solution"
+        nextScene: "solution",
       },
       {
         text: "Go back for supplies",
         minutes: 2,
-        nextScene: "entrance_house"
-      }
-    ]
+        nextScene: "entrance_house",
+      },
+    ],
   },
 
   snakeOil: {
     title: "The Snake Oil",
     text: "That was NOT medicine. Your throat burns. Your arms go numb. You can't even stand up. The poison takes 10 HP every second. cookie butter is still out there, but you can't move...",
-    choices: []
+    choices: [],
   },
 
   solution: {
@@ -446,9 +447,9 @@ const scenes = {
     choices: [
       {
         text: "Restart",
-        action: restartGame
-      }
-    ]
+        action: restartGame,
+      },
+    ],
   },
 
   dead: {
@@ -457,9 +458,9 @@ const scenes = {
     choices: [
       {
         text: "Restart",
-        action: restartGame
-      }
-    ]
+        action: restartGame,
+      },
+    ],
   },
 
   tooLate: {
@@ -468,10 +469,10 @@ const scenes = {
     choices: [
       {
         text: "Restart",
-        action: restartGame
-      }
-    ]
-  }
+        action: restartGame,
+      },
+    ],
+  },
 };
 
 // --------------------------------------------------
@@ -480,14 +481,14 @@ const scenes = {
 //
 // TO CUSTOMIZE THIS SECTION
 // 1) add a new const variable for each new field you added above
-// Make sure to match the ids used in your mock up with the fields 
+// Make sure to match the ids used in your mock up with the fields
 // 2) set the .textContent of each variable to the corresponding field in the scene object
 // Use sceneTitle as a model
 // --------------------------------------------------
 
 // First, we create variables to hold the references to the HTML elements
-// Technically you could just use document.getElementById('id-name') 
-// in the function itself, but that would be very wordy 
+// Technically you could just use document.getElementById('id-name')
+// in the function itself, but that would be very wordy
 // and make the code harder to read
 const sceneTitle = document.getElementById("scene-title");
 const sceneText = document.getElementById("scene-text");
@@ -496,7 +497,6 @@ const characterName = document.getElementById("character-name");
 
 // Then, we create a function to update the scene,
 function updateScene(sceneName) {
-
   //This update the variable currentScene with the new scene passed as a parameter
   currentScene = sceneName;
 
@@ -545,14 +545,20 @@ function updateScene(sceneName) {
     choicesContainer.appendChild(button);
   });
 
-  if (health > 0 && health < 100 && time < 540 && currentScene !== "solution" && currentScene !== "snakeOil" && inventory.includes("a bandaid")) {
+  if (
+    health > 0 &&
+    health < 100 &&
+    time < 540 &&
+    currentScene !== "solution" &&
+    currentScene !== "snakeOil" &&
+    inventory.includes("a bandaid")
+  ) {
     const button = document.createElement("button");
     button.textContent = "Use the bandaid (+25 HP)";
     button.addEventListener("click", useBandaid);
     choicesContainer.appendChild(button);
   }
 }
-
 
 // --------------------------------------------------
 // HEALTH
@@ -570,7 +576,7 @@ let health = 100;
 // Display current health
 const healthDisplay = document.getElementById("health-display");
 
-// Create a function to update health 
+// Create a function to update health
 function updateHealth(amount) {
   health += amount;
   if (health > 100) {
@@ -594,21 +600,26 @@ updateHealth(0);
 // INVENTORY
 // Read through the comments below to see what this section does
 //
-// For now, you are probably leaving this section as is. 
+// For now, you are probably leaving this section as is.
 // --------------------------------------------------
 
 // Create a variable for inventory
-let inventory = ["a flashlight", "a bandaid", "a fingernail clipper", "empty glass bottle"];
+let inventory = [
+  "a flashlight",
+  "a bandaid",
+  "a fingernail clipper",
+  "empty glass bottle",
+];
 
 // Display current inventory
 const inventoryDisplay = document.querySelector("#inventory-display");
 const timeDisplay = document.getElementById("time-display");
 inventoryDisplay.textContent = inventory.join(", ");
 
-// Create a function to update inventory 
+// Create a function to update inventory
 function pickUpItem(itemName) {
-    // Add itemName to the inventory array
-    // Show the updated inventory on the page
+  // Add itemName to the inventory array
+  // Show the updated inventory on the page
   if (!inventory.includes(itemName)) {
     inventory.push(itemName);
   }
@@ -616,15 +627,16 @@ function pickUpItem(itemName) {
 }
 
 // --------------------------------------------------
-// CONDITIONAL 
-// Depending on how you want to implement the conditional logic, you may 
+// CONDITIONAL
+// Depending on how you want to implement the conditional logic, you may
 // simply adjust the names below or you may need to expand upon this section
 // --------------------------------------------------
 
 // Create a function that checks if the inventory contains one item and if so shows the win condition scene.
 function unlockDoor() {
   if (!inventory.includes("skeleton key")) {
-    timeDisplay.textContent += " The door is locked. You need the skeleton key.";
+    timeDisplay.textContent +=
+      " The door is locked. You need the skeleton key.";
     return false;
   }
   updateHealth(-5);
@@ -646,7 +658,13 @@ function updateTime(amount) {
 }
 
 function useBandaid() {
-  if (!inventory.includes("a bandaid") || health <= 0 || time >= 540 || currentScene === "snakeOil" || currentScene === "solution") {
+  if (
+    !inventory.includes("a bandaid") ||
+    health <= 0 ||
+    time >= 540 ||
+    currentScene === "snakeOil" ||
+    currentScene === "solution"
+  ) {
     return;
   }
   inventory.splice(inventory.indexOf("a bandaid"), 1);
@@ -660,7 +678,12 @@ function restartGame() {
   health = 100;
   time = 494;
   bladeStopped = false;
-  inventory = ["a flashlight", "a bandaid", "a fingernail clipper", "empty glass bottle"];
+  inventory = [
+    "a flashlight",
+    "a bandaid",
+    "a fingernail clipper",
+    "empty glass bottle",
+  ];
   inventoryDisplay.textContent = inventory.join(", ");
   updateHealth(0);
   updateScene("outside_pumpkin_patch");

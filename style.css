@@ -1,26 +1,70 @@
-      body {
-        background-color: black;
-        color: white;
-        font-family: courier new;
-      }
+body {
+  background-color: black;
+  color: white;
+  font-family: courier new;
+}
 
-      .center-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-      }
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 
-      .navbar {
-        font-family: fantasy;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-      }
+.navbar {
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 0 15px;
-      }
+.subheading {
+  background-color: #333333;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border: 10px whitesmoke dotted;
+  margin: 50px;
+  padding: 15px;
+}
+
+.heading {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: courier new;
+}
+
+.card {
+  background-color: black;
+  color: white;
+  font-family: courier new;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+#inventory-display {
+  padding: 0;
+  text-decoration: underline;
+}
+
+#health-display {
+  padding: 0;
+  text-decoration: underline;
+}
+
+#time-display {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 280px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #b3b3b3;
+  border-top: 1px solid #333333;
+}
