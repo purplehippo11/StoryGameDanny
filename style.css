@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Grenze+Gotisch:wght@100..900&display=swap");
+
 body {
   background-color: black;
   color: white;
-  font-family: courier new;
+  font-family: "Bitcount Prop Double", sans-serif;
 }
 
 .center-image {
@@ -32,7 +34,7 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
-  font-family: courier new;
+  font-family: "Grenze Gotisch", sans-serif;
 }
 
 .card {
