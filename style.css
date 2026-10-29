@@ -15,10 +15,16 @@ body {
 
 .navbar {
   font-family: fantasy;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .subheading {
@@ -63,9 +69,10 @@ body {
 }
 
 .footer-bottom {
+  font-family: "Grenze Gotisch", sans-serif;
   text-align: center;
-  margin-top: 280px;
-  padding-top: 15px;
+  margin-top: 290px;
+  padding-top: 8px;
   font-size: 14px;
   color: #b3b3b3;
   border-top: 1px solid #333333;
