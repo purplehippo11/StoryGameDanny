@@ -8,53 +8,89 @@
   </head>
   <body>
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <div class = "container">
+            <nav class="navbar lg:navbar-expand bg-1 fg-2" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Danny's awesome bootstrap menu</a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://purplehippo11.github.io/StoryGameDanny/boostrapgrid/bootstrapgrid">danny's french fry chart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://purplehippo11.github.io/StoryGameDanny/bootstrapintro/bootstrapintro">danny's lost cat :c</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">danny's debit card number</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                        more of danny's bs
+                        </button>
+                        <div class="menu">
+                        <a class="menu-item" href="https://purplehippo11.github.io/bestcapstoneprojecteva/puppypage.html">puppy!</a>
+                        <a class="menu-item" href="https://purplehippo11.github.io/bestcapstoneprojecteva/1.6.html">not a scam page</a>
+                        <a class="menu-item" href="https://purplehippo11.github.io/StoryGameDanny/about.html">about me</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                </dialog>
+            </div>
+        </nav>
 
-        <div class="container text-center">
-    <div class="row">
-        <div class="col fg-accent border border-accent border-5">
-        lawful good
-        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/09/sweet-potato-fries-1.jpg" class="d-block w-100 h-75 rounded-5" alt="sweetPotatoFries">
+            <div class="container text-center">
+        <div class="row">
+            <div class="col fg-accent border border-accent border-5">
+            lawful good
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/09/sweet-potato-fries-1.jpg" class="d-block w-100 h-75 rounded-5" alt="sweetPotatoFries">
+            </div>
+            <div class="col fg-success border border-success border-5">
+            neutral good
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqK_7gW7w3ir9tJOrfR8eps--oSKwn1VtL54nuyek4Q&s=10" class="d-block w-100 h-75 rounded-5" alt="animalStyleFries">
+            </div>
+            <div class="col fg-primary border border-primary border-5">
+            chaotic good
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-7xh_Zuh2APNmefhhngld4ZZCNoDgPzZ0l7vdVearg&s=10" class="d-block w-100 h-75 rounded-5" alt="curlyFries">
+            </div>
         </div>
-        <div class="col fg-success border border-success border-5">
-        neutral good
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqK_7gW7w3ir9tJOrfR8eps--oSKwn1VtL54nuyek4Q&s=10" class="d-block w-100 h-75 rounded-5" alt="animalStyleFries">
+
+        <div class="row">
+            <div class="col fg-success border border-subtle-success border-5">
+            lawful neutral
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtsjaeI47g2qUfq_mIi6nSMZvzaGhpTFuOrGrKXUQ9Ww&s=10" class="d-block w-100 h-75 rounded-5" alt="waffleFries">
+            </div>
+            <div class="col fg-secondary border border-secondary border-5">
+            true neutral
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX6F-5hulILYwE4O6bqEy5QTbDUfrBS0p99hNZbROQ6w&s=10" class="d-block w-100 h-75 rounded-5" alt="fries">
+            </div>
+            <div class="col fg-warning border border-warning border-5">
+            chaotic neutral
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNS8oZ5LkAYLd-UV9zZ51OESeaV95FuMoDK1RCUXYcTg&s=10" class="d-block w-100 h-75 rounded-5" alt="tatorTots">
+            </div>
         </div>
-        <div class="col fg-primary border border-primary border-5">
-        chaotic good
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-7xh_Zuh2APNmefhhngld4ZZCNoDgPzZ0l7vdVearg&s=10" class="d-block w-100 h-75 rounded-5" alt="curlyFries">
+
+        <div class="row">
+            <div class="col fg-warning border border-subtle-warning border-5">
+            lawful evil
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5emCOkNhQ-SH57a3X7uhubxsi3G8W24RgzId-L8JSQ&s=10" class="d-block w-100 h-75 rounded-5" alt="crinkleCutFries">
+            </div>
+            <div class="col fg-inverse border border-inverse border-5">
+            neutral evil
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQu-qJo9Ex8abYp71Y55EpWmuCVW4rJB3pahD4vqv7_A&s=10" class="d-block w-100 h-75 rounded-5" alt="steakFries">
+            </div>
+            <div class="col fg-danger border border-danger border-5">
+            chaotic evil
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9vAQdUYuL5yh5TiuX64QGGs5HCglh_zJjMphLBD9kKw&s=10" class="d-block w-100 h-75 rounded-5" alt="poutine">
         </div>
     </div>
-
-    <div class="row">
-        <div class="col fg-success border border-subtle-success border-5">
-        lawful neutral
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtsjaeI47g2qUfq_mIi6nSMZvzaGhpTFuOrGrKXUQ9Ww&s=10" class="d-block w-100 h-75 rounded-5" alt="waffleFries">
-        </div>
-        <div class="col fg-secondary border border-secondary border-5">
-        true neutral
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX6F-5hulILYwE4O6bqEy5QTbDUfrBS0p99hNZbROQ6w&s=10" class="d-block w-100 h-75 rounded-5" alt="fries">
-        </div>
-        <div class="col fg-warning border border-warning border-5">
-        chaotic neutral
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNS8oZ5LkAYLd-UV9zZ51OESeaV95FuMoDK1RCUXYcTg&s=10" class="d-block w-100 h-75 rounded-5" alt="tatorTots">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col fg-warning border border-subtle-warning border-5">
-        lawful evil
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5emCOkNhQ-SH57a3X7uhubxsi3G8W24RgzId-L8JSQ&s=10" class="d-block w-100 h-75 rounded-5" alt="crinkleCutFries">
-        </div>
-        <div class="col fg-inverse border border-inverse border-5">
-        neutral evil
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQu-qJo9Ex8abYp71Y55EpWmuCVW4rJB3pahD4vqv7_A&s=10" class="d-block w-100 h-75 rounded-5" alt="steakFries">
-        </div>
-        <div class="col fg-danger border border-danger border-5">
-        chaotic evil
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9vAQdUYuL5yh5TiuX64QGGs5HCglh_zJjMphLBD9kKw&s=10" class="d-block w-100 h-75 rounded-5" alt="poutine">
-    </div>
-
-    </div>
-
   </body>
 </html>
