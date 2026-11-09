@@ -7,6 +7,17 @@
 // 2) customize the scenes to fit your story
 // 3) add any new fields to the function below
 // --------------------------------------------------
+const settings = new URLSearchParams(window.location.search);
+const playerName = (settings.get("player") || "").trim() || "You";
+const difficulty = settings.get("difficulty");
+
+let startingHealth = 100;
+
+if (difficulty === "hard") {
+  startingHealth = 60;
+} else if (difficulty === "impossible") {
+  startingHealth = 30;
+}
 
 // First, we create a variable for the current scene being displayed
 let currentScene = "outside_pumpkin_patch";
@@ -507,7 +518,7 @@ function updateScene(sceneName) {
   // the appropriate text from the scene object
   sceneTitle.textContent = scene.title;
   sceneText.textContent = scene.text;
-  characterName.textContent = scene.character || "You";
+  characterName.textContent = "Character: " + playerName;
   updateTime(0);
 
   // Clear the old buttons before creating new ones
@@ -571,7 +582,7 @@ function updateScene(sceneName) {
 // --------------------------------------------------
 
 // Create a variable for health
-let health = 100;
+let health = startingHealth;
 
 // Display current health
 const healthDisplay = document.getElementById("health-display");
@@ -675,7 +686,7 @@ function useBandaid() {
 
 function restartGame() {
   clearInterval(snakeOilTimer);
-  health = 100;
+  health = startingHealth;
   time = 494;
   bladeStopped = false;
   inventory = [

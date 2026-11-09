@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Grenze+Gotisch:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Grenze+Gotisch:wght@100..900&family=Press+Start+2P&display=swap');
 
 body {
   background-color: black;
   color: white;
-  font-family: "Bitcount Prop Double", sans-serif;
+  font-family: "Geist Pixel", sans-serif;
 }
 
 .center-image {
@@ -15,6 +15,7 @@ body {
 
 .navbar {
   font-family: fantasy;
+  letter-spacing: 0.1em;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -28,11 +29,10 @@ body {
 }
 
 .subheading {
-  background-color: #333333;
-  text-align: center;
+  font-family: fantasy;
+  text-align:left;
   letter-spacing: 0.1em;
-  border: 10px whitesmoke dotted;
-  margin: 50px;
+  margin: 10px
   padding: 15px;
 }
 
@@ -40,17 +40,27 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
-  font-family: "Grenze Gotisch", sans-serif;
+  font-family: fantasy;
+  letter-spacing: 0.1em;
 }
 
 .card {
   background-color: black;
   color: white;
-  font-family: "Bitcount Prop Double", sans-serif;
+  font-family: "Geist Pixel", sans-serif;
   border: 2px solid white;
   padding: 20px;
   margin: 20px;
-  text-align: center;
+  text-align:center;
+}
+
+.card-body{
+  background-color: black;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  border: 2px solid white;
+  padding: 20px;
+  text-align:center;
 }
 
 #inventory-display {
@@ -83,3 +93,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+#scene-title,
+#character-name {
+  font-family: "Press Start 2P", monospace;
+}
+
